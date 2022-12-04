@@ -7,60 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
 </head>
 <style>
-    a {
+    body {
+        background-image: url(background-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav a {
+
         display: inline;
         padding: 8px;
-        font-size: large;
-        color: rgb(211, 244, 24);
-        background-color: rgb(100, 107, 248);
+        margin-right: 30px;
+        font-size: xx-large;
+        color: white;
         border-radius: 10%;
-        
+        text-shadow: 0 0 30px #ff0000;
     }
 
     .fontAwesome {
         margin-right: 20px;
-        border-collapse: collapse;
+        padding: 10px;
+        font-size: x-large;
+        background-color: #00f7ff;
+        border-radius: 50%;
+
+    }
+
+    .font {
+        font-size: larger;
+        margin-right: 40px;
+    }
+
+    #ft {
+        font-family: 'Mochiy Pop P One', sans-serif;
     }
 
     header {
-        padding-bottom: 20px;
+        padding-bottom: 50px;
+        font-size: larger;
+    }
+
+    #footer {
+        font-size: xx-large;
+    }
+    #mark{
+        font-size: larger;
+        color: #ff0000;
+        font-family: Arial, Helvetica, sans-serif;
     }
 </style>
 
 <body>
     <header>
-        <span class="fontAwesome"><i class="fa fa-user" aria-hidden="true"
-                style="color: rgb(15, 86, 185)"></i>&nbsp;<b>AjayGokhe</b></span>
-        <span class="fontAwesome"> <i class="fa fa-phone-square" aria-hidden="true"
-                style="color: rgb(15, 86, 185)"></i>&nbsp;<b>8412936207</b></span>
-        <span class="fontAwesome"><i class="fa fa-envelope" aria-hidden="true"
-                style="color: rgb(15, 86, 185)"></i>&nbsp;gokheajay@gmail.com</span>
+        <span class="fontAwesome"><i class="fa fa-user" aria-hidden="true" style="color: blue"></i></span><b
+            class="font">AjayGokhe</b>
+        <span class="fontAwesome"> <i class="fa fa-phone-square" aria-hidden="true" style="color:  blue"></i></span><b
+            class="font">8412936207</b>
+        <span class="fontAwesome"><i class="fa fa-envelope" aria-hidden="true" style="color:  blue"></i></span><b
+            class="font">gokheajay@gmail.com</b>
     </header>
     <nav>
-        <a href="home.html" target="My frame"><b>HOME</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="techStack.html" target="My frame"><b>TECHSTACK</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="media.html" target="My frame"><b>MEDIA</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="gallery.html" target="My frame"><b>GALLERY</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="projecDetails.html"
-            target="My frame"><b>PROJECTS</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="registrarionForm.html" target="My frame"><b>CONTACT US
-                </b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="home.html" target="My frame"><b>HOME</b></a>
+        <a href="techStack.html" target="My frame"><b>TECHSTACK</b></a>
+        <a href="media.html" target="My frame"><b>MEDIA</b></a>
+        <a href="gallery.html" target="My frame"><b>GALLERY</b></a>
+        <a href="projecDetails.html" target="My frame"><b>PROJECTS</b></a>
         <a href="personal.html" target="My frame"><b>PERSONAL
-                </b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="registrarionForm.html" target="My frame"><b>CONTACT US</b></a>
+            </b></a>
     </nav>
     <br>
-    <iframe width="1000px" height="620px" style="border-color: blue;" name="My frame"></iframe>
+    <iframe width="1400px" height="680px" name="My frame" style="color: transparent;"></iframe>
     <br><br>
     <footer>
-        <b>Follow Me</b> &nbsp;&nbsp;
-        <i class="fa fa-instagram" aria-hidden="true" style="color: rgb(224, 35, 215)"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-        <i class="fa fa-facebook-square" aria-hidden="true"
-            style="color: rgb(224, 35, 215)"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-        <i class="fa fa-twitter" aria-hidden="true" style="color: rgb(224, 35, 215)"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-        <i class="fa fa-google" aria-hidden="true" style="color: rgb(224, 35, 215)"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <b id="ft" style="color: black">Follow Me On</b> &nbsp;&nbsp;
+        <span id="footer"><i class="fa fa-instagram" aria-hidden="true"
+                style="color: rgb(150, 8, 67)"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-facebook-square" aria-hidden="true"
+                style="color: rgb(15, 32, 159)"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-twitter" aria-hidden="true" style="color: rgb(81, 126, 217)"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-google" aria-hidden="true" style="color: 	#fadb10"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span>
     </footer>
+
+    <marquee direction="left" width="1400px" height="30px" behavior="sliding" font-size="50px" >
+        <span id="mark">Codemind Technologies !!!</span>
+    </marquee>
 </body>
 
 </html>
