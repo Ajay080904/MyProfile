@@ -2,110 +2,163 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration</title>
+    <style>
+label{
+    color:yellow;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-shadow: 4px 4px 5px blue;
+    text-align: center;
+    }
+    input[type="text"],input[type="number"]{
+        color: red;
+        font-weight: bolder;
+        width: 140px;
+        border-radius: 10px;
+        text-transform: capitalize;
+    }   
+    input[type="email"]{
+        color: red;
+        font-weight: bolder;
+    }
+body{
+    background-image: url(background-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 35%;
+}
+h3:hover{color: aqua;}
+h3{
+    background-color: brown;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 335px;
+    text-align: center;
+    color: yellow;
+    text-shadow: 4px 4px 5px blue;
+}
+input[type="submit"],input[type="reset"]{
+    color:red;
+    font-weight: bolder;
+    background-color: yellow;
+}
+input:hover[type="submit"],input:hover[type="reset"]{background-color: black;}
+input[type="checkbox"]{
+    background-color: yellow;
+    text-shadow: 4px 4px 5px blue;
+}
+    input[type="option"]{
+        background-color: aqua;
+    }
+textarea{
+color: red;
+border-radius: 10px;
+font-weight: bolder;}
+
+
+
+    </style>
 </head>
 
 <body>
-    <h3>Feedback Form</h3>
+        <h3>Student Registration Form</h3>
     <form>
         <table>
             <tbody>
                 <tr>
                     <td><label><b>First Name </b></label></td>
-                    <td><input type="text" placeholder="Enter Only Capital Letter" required autofocus maxlength="5"/></td>
+                    <td><input type="text" placeholder="Enter Only Capital Letter" required autofocus maxlength="5" />
+                    </td>
                 </tr>
                 <tr>
                     <td><label><b>Last Name </b></label></td>
-                    <td><input type="text" placeholder="Enter Only Capital Letter" required /></td>
+                    <td><input type="text" placeholder="Enter Only Capital Letter" required/></td>
                 </tr>
                 <tr>
                     <td><label><b>Age </b></label></td>
-                    <td><input type="number" maxlength="2"/></td>
+                    <td><input type="number" maxlength="2" /></td>
                 </tr>
                 <tr>
                     <td><label><b>Select Gender</label></b></td>
                     <td>
-                    <input type="radio" name="gender"><label>Male</label>
-                    <input type="radio" name="gender"><label>Female</label>
-                    <input type="radio" name="gender"><label>Others</label>
+                        <input type="radio" name="gender"><label>Male</label>
+                        <input type="radio" name="gender"><label>Female</label>
+                        <input type="radio" name="gender"><label>Others</label>
                     </td>
                 </tr>
                 <tr>
                     <td><label><b>Select Training</label></b></td>
                     <td>
-                    <input type="checkbox" ><label>Angular</label>
-                    <input type="checkbox" ><label>Java</label>
-                    <input type="checkbox" ><label>Python</label>
+                        <input type="checkbox"><label>Angular</label>
+                        <input type="checkbox"><label>Java</label>
+                        <input type="checkbox"><label>Python</label>
                     </td>
                 </tr>
                 <tr>
                     <td><label><b>Mobile No. </b></label></td>
-                    <td><input type="number" placeholder="Enter only 10 digits" maxlength="10"/></td>
+                    <td><input type="number" placeholder="Enter only 10 digits" maxlength="10" /></td>
                 </tr>
                 <tr>
                     <td><label><b>Email Id </b></label></td>
-                    <td><input type="email" placeholder="ex: abc@outlook.com"/></td>
+                    <td><input type="email" placeholder="ex: abc@outlook.com" /></td>
                 </tr>
                 <tr>
                     <td><label><b>Password </b></label></td>
-                    <td><input type="password"  required /></td>
+                    <td><input type="password" required /></td>
                 </tr>
                 <tr>
                     <td><label><b>Profile Photo</b></label></td>
-                    <td><input type="file"/></td>
+                    <td><input type="file" /></td>
                 </tr>
                 <tr>
                     <td><label><b>Select Graduation</b></label></td>
                     <td>
                         <select>
-                        <option>B.E</option>
-                        <option>BSC</option>
-                        <option>BTech</option>
-                        <option>BSC</option>
-                    </select>
+                            <option>B.E</option>
+                            <option>BSC</option>
+                            <option>BTech</option>
+                            <option>BSC</option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
                     <td><label><b>Upload Documents</b></label></td>
-                    <td><input type="file" multiple  required /></td>
+                    <td><input type="file" multiple required /></td>
                 </tr>
                 <tr>
                     <td><label><b>Date of Birth</b></label></td>
-                    <td><input type="date"  required /></td>
+                    <td><input type="date" required /></td>
                 </tr>
                 <tr>
                     <td><label><b>Available Week</b></label></td>
-                    <td><input type="week"  required /></td>
+                    <td><input type="week" required /></td>
                 </tr>
                 <tr>
                     <td><label><b>Available Time</b></label></td>
-                    <td><input type="time"  required /></td>
+                    <td><input type="time" required /></td>
                 </tr>
                 <tr>
                     <td><label><b>State </b></label></td>
-                    <td><input type="text" value="MH" readonly/></td>
+                    <td><input type="text" value="MH" readonly /></td>
                 </tr>
                 <tr>
                     <td><label><b>Country </b></label></td>
-                    <td><input type="text" value="India" disabled/></td>
+                    <td><input type="text" value="India" disabled /></td>
                 </tr>
                 <tr>
                     <td><label><b>Education </b></label></td>
-                    <td><input type="text"/></td>
-                </tr
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                <td><label><b>Address</b></label></td>
+                <td><textarea rows="7" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="submit"><input type="submit" /></td>
+                    <td class="submit"><input type="reset" /></td>
+                </tr>
 
-                <tr>
-                    <td><label><b>Feedback</b></label></td>
-                    <td><textarea rows="7" cols="50"></textarea></td>
-                </tr>
-                <tr>
-                    <td><input type="submit"/></td>
-                    <td><input type="reset"/></td>
-                </tr>
-               
 
             </tbody>
         </table>
